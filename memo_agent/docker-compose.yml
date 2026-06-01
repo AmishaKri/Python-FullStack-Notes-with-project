@@ -1,0 +1,31 @@
+config = {
+    "version": "v1.1",
+    "embedder": {
+        "provider": "openai",
+        "config": {
+            "api_key": "your-openai-api-key",
+            "model": "text-embedding-3-small"
+        }
+    },
+    "llm": {
+        "provider": "openai",
+        "config": {
+            "api_key": "your-openai-api-key",
+            "model": "gpt-4o"
+        }
+    },
+    "graph_store": {
+        "provider": "neo4j",
+        "config": {
+            "url": "bolt://localhost:7687",
+            "username": "neo4j",
+            "password": "password"
+        }
+    },
+    "vector_store": {
+        "provider": "qdrant",
+        "config": {
+            "url": "http://localhost:6333"
+        }
+    }
+    }
